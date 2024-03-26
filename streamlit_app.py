@@ -16,7 +16,7 @@ def icon(emoji: str):
 
 # icon("🏎️")
 
-st.subheader("", divider="black", anchor=False)
+st.subheader("", divider="", anchor=False)
 
 client = Groq(
     api_key=st.secrets["GROQ_API_KEY"],
