@@ -11,6 +11,9 @@ footer {visibility: hidden;}
 #GithubIcon {
   visibility: hidden;
 }
+.st-emotion-cache-30do4w {
+visibility: hidden;
+}
 </style>
 
 """
