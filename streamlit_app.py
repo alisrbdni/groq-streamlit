@@ -4,7 +4,14 @@ from groq import Groq
 
 st.set_page_config(page_icon="💬", layout="wide",
                    page_title="")
+hide_streamlit_style = """
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+</style>
 
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 def icon(emoji: str):
     """Shows an emoji as a Notion-style page icon."""
@@ -13,13 +20,7 @@ def icon(emoji: str):
         unsafe_allow_html=True,
     )
 
-hide_streamlit_style = """
 
-#MainMenu {visibility: hidden;}
-footer {visibility: hidden;}
-
-"""
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 # icon("🏎️")
 
 st.subheader("", divider="", anchor=False)
